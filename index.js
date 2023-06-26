@@ -62,4 +62,18 @@ function newCard() {
         cards.push(card)
         renderGame()        
     }
+    else if(isAlive ===false && hasBlackJack===true ) {
+        messageEl.textContent = "You can't draw any more"
+    }
 }
+
+function dealNew(){
+    cards = []
+    sum = 0
+    messageEl.textContent = "Please deal again"
+    cardsEl.textContent = "Cards: "
+    sumEl.textContent = " Sum: "
+
+}
+
+
